@@ -42,18 +42,17 @@ NOTE: This gem imply that you have a working JQuery installation.
 
 ## Usage
 
-In your view add
+In your layout add
 
-```ruby
-= render 'cookies_eu/cookies_bar'
+```erb
+<%= cookies_bar %>
 ```
 
 You can add a link parameter to link to your cookies explanation page (you have to create the page and controller for this)
 
 ```ruby
-= render 'cookies_eu/cookies_eu', link: '/cookies'
+<%= cookies_bar link: '/cookies' %>
 ```
-
 
 If you whish to customize the syle of the div the classes are:
 
