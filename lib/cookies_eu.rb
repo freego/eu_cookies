@@ -3,4 +3,6 @@ require "cookies_eu/engine"
 require 'js_cookie_rails'
 
 module CookiesEu
+  mattr_accessor :enabled
+  mattr_accessor :position
 end

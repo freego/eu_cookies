@@ -1,6 +1,6 @@
 module CookiesEuHelper
   def must_accept_cookie?
-    cookies['cookie_eu_consented'] != 'true'
+    cookies['cookie_eu_consented'] != 'true' && CookiesEu.enabled
   end
 
   def cookies_bar(params = {})

@@ -4,11 +4,18 @@ $cookies-bar-button-color:        #4d90fe !default;
 $cookies-bar-button-color2:       #4787ed !default;
 $cookies-bar-button-border-color: #3079ed !default;
 
-// $cookies-bar-line-height:         40px !default;
+$cookies-bar-line-height:         40px !default;
+
+.cookies-eu-position-bottom {
+  bottom: 0;
+}
+
+.cookies-eu-position-top {
+  top: 0;
+}
 
 .cookies-eu {
   position: fixed;
-  bottom: 0;
   left: 0;
   line-height: $cookies-bar-line-height;
   background: $cookies-bar-background-color;

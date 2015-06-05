@@ -62,6 +62,15 @@ If you whish to customize the syle of the div the classes are:
 .cookies_eu_link      // link
 ```
 
+## Configuration
+
+On a initializer you can:
+
+```ruby
+CookiesEu.position = :top # put on top of page instead of bottom
+CookiesEu.enabled = false # disable all the things
+```
+
 ## Turbolinks NOT supported
 
 Please use [jquery.turbolinks gem](https://github.com/kossnocorp/jquery.turbolinks)
