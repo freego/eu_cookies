@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Displays a cookie consent. If you dont disable cokkies in settings, we assume you are ok with us using cookies}
   spec.homepage      = "https://github.com/infinum/cookies_eu"
   spec.license       = "MIT"
+  spec.required_ruby_version = '>= 1.9.3'
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -19,6 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "js_cookie_rails"
+
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 end
