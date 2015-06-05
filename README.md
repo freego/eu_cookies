@@ -37,6 +37,9 @@ And in application.css:
 
     *= require cookies_eu
 
+
+NOTE: This gem imply that you have a working JQuery installation.
+
 ## Usage
 
 In your view add
