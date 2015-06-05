@@ -42,7 +42,7 @@ And in application.css:
 In your view add
 
 ```ruby
-= render 'cookies_eu/cookies_eu'
+= render 'cookies_eu/cookies_bar'
 ```
 
 You can add a link parameter to link to your cookies explanation page (you have to create the page and controller for this)
