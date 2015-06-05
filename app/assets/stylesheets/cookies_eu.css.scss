@@ -1,10 +1,18 @@
+$cookies-bar-background-color:    #f2f2f2 !default;
+$cookies-bar-border-color:        #e4e4e4 !default;
+$cookies-bar-button-color:        #4d90fe !default;
+$cookies-bar-button-color2:       #4787ed !default;
+$cookies-bar-button-border-color: #3079ed !default;
+
+// $cookies-bar-line-height:         40px !default;
+
 .cookies-eu {
   position: fixed;
   bottom: 0;
   left: 0;
-  line-height: 40px;
-  background: #f2f2f2;
-  border-top: 1px solid #e4e4e4;
+  line-height: $cookies-bar-line-height;
+  background: $cookies-bar-background-color;
+  border-top: 1px solid $cookies-bar-border-color;
   width: 100%;
   z-index: 999;
   text-align: center;
@@ -19,9 +27,9 @@
     padding-right: 20px;
 
     .cookies-eu-ok {
-      background-color: #4d90fe;
-      background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
-      border: 1px solid #3079ed;
+      background-color: $cookies-bar-button-color;
+      background-image: -webkit-linear-gradient(top, $cookies-bar-button-color, $cookies-bar-button-color2);
+      border: 1px solid $cookies-bar-button-border-color;
       border-radius: 2px;
       color: #fff;
       cursor: default;
