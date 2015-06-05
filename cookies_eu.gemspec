@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "jquery-rails"
-  spec.add_dependency "jquery-cookie-rails"
+  spec.add_dependency "js_cookie_rails"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 end
