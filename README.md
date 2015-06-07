@@ -4,7 +4,8 @@ A complete Rails solution to the European Cookie Law issue.
 
 ## Supported languages
 
-English, German, Spanish, French, Croatian, Italian, Slovenian, Dutch
+English, German, Spanish, French, Croatian, Italian, Slovenian, Dutch, Estonian,
+Norwegian, Russian and Swedish.
 
 ## Installation
 
