@@ -6,15 +6,15 @@ $cookies-bar-button-border-color: #3079ed !default;
 
 $cookies-bar-line-height:         40px !default;
 
-.cookies-eu-position-bottom {
+.eu-cookies-position-bottom {
   bottom: 0;
 }
 
-.cookies-eu-position-top {
+.eu-cookies-position-top {
   top: 0;
 }
 
-.cookies-eu {
+.eu-cookies {
   position: fixed;
   left: 0;
   line-height: $cookies-bar-line-height;
@@ -24,16 +24,16 @@ $cookies-bar-line-height:         40px !default;
   z-index: 999;
   text-align: center;
 
-  .cookies-eu-content-holder {
+  .eu-cookies-content-holder {
     display: inline-block;
     padding: 0 20px;
     line-height: 26px;
   }
-  .cookies-eu-button-holder {
+  .eu-cookies-button-holder {
     display: inline-block;
     padding-right: 20px;
 
-    .cookies-eu-ok {
+    .eu-cookies-ok {
       background-color: $cookies-bar-button-color;
       background-image: -webkit-linear-gradient(top, $cookies-bar-button-color, $cookies-bar-button-color2);
       border: 1px solid $cookies-bar-button-border-color;
@@ -57,15 +57,15 @@ $cookies-bar-line-height:         40px !default;
 }
 
 @media (max-width: 767px){
-  .cookies-eu{
+  .eu-cookies{
     position: static;
     font-size: 12px;
     line-height: 20px;
-    .cookies-eu-content-holder{
+    .eu-cookies-content-holder{
       line-height: 16px;
       padding: 5px 20px;
     }
-    .cookies-eu-button-holder{
+    .eu-cookies-button-holder{
       padding-bottom: 5px;
     }
   }

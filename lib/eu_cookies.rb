@@ -1,8 +1,8 @@
-require "cookies_eu/version"
-require "cookies_eu/engine"
+require "eu_cookies/version"
+require "eu_cookies/engine"
 require 'js_cookie_rails'
 
-module CookiesEu
+module EuCookies
   mattr_accessor :enabled
   mattr_accessor :position
 end

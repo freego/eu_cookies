@@ -1,0 +1,13 @@
+<div class="eu-cookies eu-cookies-position-<%= EuCookies.position %>">
+  <span class="eu-cookies-content-holder">
+    <%= t('eu_cookies.cookies_text') %>
+  </span>
+  <span class="eu-cookies-button-holder">
+    <button class="eu-cookies-ok">
+      <%= t('eu_cookies.ok') %>
+    </button>
+    <% if link = local_assigns[:link].presence %>
+      <%= link_to t('eu_cookies.learn_more'), link, class: 'eu-cookies-link' %>
+    <% end %>
+  </span>
+</div>
