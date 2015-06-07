@@ -27,7 +27,7 @@ NOTE: This gem imply that you have a working JQuery installation.
 
 ## Usage
 
-In your layout add
+Just add this on you application layout template:
 
 ```erb
 <%= cookies_bar %>
@@ -39,13 +39,8 @@ You can add a link parameter to link to your cookies explanation page (you have 
 <%= cookies_bar link: '/cookies' %>
 ```
 
-If you wish to customize the style of the div the classes are:
-
-```javascript
-.eu_cookies           // main div
-.eu_cookies_ok        // button
-.eu_cookies_link      // link
-```
+To quickly customize the style you can override [Sass variables](https://github.com/freego/eu_cookies/blob/master/app/assets/stylesheets/eu_cookies/_variables.scss)
+on your `app/assets/stylesheets/eu_cookies.scss` file.
 
 ## Configuration
 
