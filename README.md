@@ -53,6 +53,7 @@ On a initializer you can configure some things (defaults are shown here):
 
 ```ruby
 EuCookies.position = :bottom # or :top
+EuCookies.use_scroll = false # true to treat page scroll as acceptance
 EuCookies.enabled = true # false to disable all the things
 ```
 

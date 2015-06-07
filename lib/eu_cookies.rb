@@ -5,4 +5,5 @@ require 'js_cookie_rails'
 module EuCookies
   mattr_accessor :enabled
   mattr_accessor :position
+  mattr_accessor :use_scroll
 end

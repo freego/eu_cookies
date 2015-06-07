@@ -8,4 +8,11 @@ module EuCookiesHelper
       render partial: 'eu_cookies/cookies_bar', locals: params
     end
   end
+
+  def cookies_bar_data
+    {
+      position: EuCookies.position,
+      use_scroll: EuCookies.use_scroll.to_s
+    }
+  end
 end

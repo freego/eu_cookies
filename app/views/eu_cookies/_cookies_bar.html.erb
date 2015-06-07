@@ -1,4 +1,4 @@
-<div class="eu-cookies eu-cookies-position-<%= EuCookies.position %>">
+<%= content_tag :div, class: "eu-cookies", data: cookies_bar_data do %>
   <span class="eu-cookies-content-holder">
     <%= t('eu_cookies.cookies_text') %>
   </span>
@@ -10,4 +10,4 @@
       <%= link_to t('eu_cookies.learn_more'), link, class: 'eu-cookies-link' %>
     <% end %>
   </span>
-</div>
+<% end %>

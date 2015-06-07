@@ -6,11 +6,11 @@ $cookies-bar-button-border-color: #3079ed !default;
 
 $cookies-bar-line-height:         40px !default;
 
-.eu-cookies-position-bottom {
+.eu-cookies[data-position="bottom"] {
   bottom: 0;
 }
 
-.eu-cookies-position-top {
+.eu-cookies[data-position="top"] {
   top: 0;
 }
 
