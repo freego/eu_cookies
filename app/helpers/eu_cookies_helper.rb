@@ -15,4 +15,8 @@ module EuCookiesHelper
       use_scroll: EuCookies.use_scroll.to_s
     }
   end
+
+  def display_policy?
+    EuCookies.display_policy
+  end
 end

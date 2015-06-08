@@ -1,4 +1,4 @@
-class HomepagesController < ActionController::Base
+class HomepagesController < ApplicationController
   def index
   end
 end

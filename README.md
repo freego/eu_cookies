@@ -1,11 +1,9 @@
 # EuCookies
 
-A complete Rails solution to the European Cookie Law issue.
+A Rails solution to the European Cookie Law issue.
 
-## Supported languages
-
-English, German, Spanish, French, Croatian, Italian, Slovenian, Dutch, Estonian,
-Norwegian, Russian and Swedish.
+This will add a dismissable "cookies bar" and a `/cookies-policy` page with the
+long cookies policy text.
 
 ## Installation
 
@@ -23,42 +21,44 @@ Run the installation generator:
 
     $ bundle exec rails g eu_cookies:install
 
-NOTE: This gem imply that you have a working JQuery installation.
-
-## Usage
-
-Just add this on you application layout template:
+Then, just add this somewhere on you `<body>`:
 
 ```erb
 <%= cookies_bar %>
 ```
 
-You can add a link parameter to link to your cookies explanation page (you have to create the page and controller for this)
-
-```erb
-<%= cookies_bar link: '/cookies' %>
-```
-
-To quickly customize the style you can override [Sass variables](https://github.com/freego/eu_cookies/blob/master/app/assets/stylesheets/eu_cookies/_variables.scss)
-on your `app/assets/stylesheets/eu_cookies.scss` file.
+NOTE: This gem imply that you have JQuery.
 
 ## Configuration
 
-On a initializer you can configure some things (defaults are shown here):
+On a initializer you can configure things (defaults are shown here):
 
 ```ruby
 EuCookies.position = :bottom # or :top
 EuCookies.use_scroll = false # true to treat page scroll as acceptance
-EuCookies.enabled = true # false to disable all the things
+EuCookies.display_policy = true # false to not link long policy page
+EuCookies.enabled = true # false to disable all the features
 ```
 
-## Turbolinks is NOT supported
+## Styling
 
-Please use [jquery.turbolinks gem](https://github.com/kossnocorp/jquery.turbolinks)
+To quickly customize the style you can override [Sass variables](https://github.com/freego/eu_cookies/blob/master/app/assets/stylesheets/eu_cookies/_variables.scss)
+on your `app/assets/stylesheets/eu_cookies.scss` file.
+
+## Supported languages
+
+The short cookies bar message is available in English, German, Spanish, French,
+Croatian, Italian, Slovenian, Dutch, Estonian, Norwegian, Russian and Swedish.
+
+## Turbolinks
+
+Not supported, please use [jquery.turbolinks gem](https://github.com/kossnocorp/jquery.turbolinks).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/freego/eu_cookies. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome. This project is intended to be a safe,
+welcoming space for collaboration, and contributors are expected to adhere to the
+[Contributor Covenant](contributor-covenant.org) code of conduct.
 
 ## Credits
 

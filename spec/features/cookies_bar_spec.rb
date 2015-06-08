@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe "Cookies Bar", type: :feature, js: true do
   before do
+    EuCookies.enabled = true
     visit homepages_path
     expect_cookie_bar
   end
@@ -33,6 +34,19 @@ describe "Cookies Bar", type: :feature, js: true do
     EuCookies.enabled = false
     visit homepages_path
     dont_expect_cookie_bar
+  end
+
+  it "link to policy page" do
+    new_window = window_opened_by { click_link I18n.t('eu_cookies.learn_more') }
+    within_window new_window do
+      expect(page).to have_text "Necessary cookies"
+    end
+  end
+
+  it "allow to disable policy page" do
+    EuCookies.display_policy = false
+    visit homepages_path
+    expect(page).to_not have_text I18n.t('eu_cookies.learn_more')
   end
 end
 

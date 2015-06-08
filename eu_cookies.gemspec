@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Alessandro Lepore", "Stjepan Hadjic"]
   spec.email         = ["a.lepore@freegoweb.it"]
 
-  spec.summary       = %q{A complete Rails solution to the European Cookie Law issue}
+  spec.summary       = %q{A Rails solution to the European Cookie Law issue}
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/freego/eu_cookies"
   spec.license       = "MIT"
