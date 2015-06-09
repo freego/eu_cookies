@@ -1,6 +1,7 @@
 language: ruby
 rvm:
   - 2.2.2
+script: rspec
 before_install:
   - gem install bundler -v 1.10.2
   - "export DISPLAY=:99.0"
