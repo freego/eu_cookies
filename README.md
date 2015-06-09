@@ -6,6 +6,7 @@ This will add a dismissable "cookies bar" and a `/cookies-policy` page with the
 long cookies policy text.
 
 [![Build Status](https://travis-ci.org/freego/eu_cookies.svg)](https://travis-ci.org/freego/eu_cookies)
+[![Code Climate](https://codeclimate.com/github/freego/eu_cookies/badges/gpa.svg)](https://codeclimate.com/github/freego/eu_cookies)
 
 ## Installation
 
