@@ -5,6 +5,8 @@ A Rails solution to the European Cookie Law issue.
 This will add a dismissable "cookies bar" and a `/cookies-policy` page with the
 long cookies policy text.
 
+[![Build Status](https://travis-ci.org/freego/eu_cookies.svg)](https://travis-ci.org/freego/eu_cookies)
+
 ## Installation
 
 Add this line to your application's Gemfile:
