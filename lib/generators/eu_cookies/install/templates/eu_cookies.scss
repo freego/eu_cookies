@@ -1,7 +1,13 @@
-// You can override Sass variables here. For variables list see:
-// See https://github.com/freego/eu_cookies/blob/master/app/assets/stylesheets/eu_cookies/_variables.scss
+// You can override Sass variables here.
 
-// $cookies-bar-background-color: red;
+// $cookies-bar-position:         bottom; // or top
+// $cookies-bar-background-color: #f2f2f2;
+// $cookies-bar-border-color:     #e4e4e4;
+// $cookies-bar-btn-color:        #4d90fe;
+// $cookies-bar-btn-color2:       #4787ed;
+// $cookies-bar-btn-border-color: #3079ed;
+
+// $cookies-bar-line-height:      40px;
 
 // keep this on the last line
 @import "eu_cookies/style";

@@ -37,16 +37,15 @@ NOTE: This gem imply that you have JQuery.
 On a initializer you can configure things (defaults are shown here):
 
 ```ruby
-EuCookies.position = :bottom # or :top
 EuCookies.use_scroll = false # true to treat page scroll as acceptance
-EuCookies.display_policy = true # false to remove link, a string to link an external policy 
+EuCookies.display_policy = true # false to remove link, a string to link an external policy
 EuCookies.enabled = true # false to disable all the features
 ```
 
 ## Styling
 
-To quickly customize the style you can override [Sass variables](https://github.com/freego/eu_cookies/blob/master/app/assets/stylesheets/eu_cookies/_variables.scss)
-on your `app/assets/stylesheets/eu_cookies.scss` file.
+To quickly customize position and styles you can override some Sass variables,
+take a look to your `app/assets/stylesheets/eu_cookies.scss` file.
 
 ## Supported languages
 

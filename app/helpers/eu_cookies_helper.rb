@@ -11,7 +11,6 @@ module EuCookiesHelper
 
   def cookies_bar_data
     {
-      position: EuCookies.position,
       use_scroll: EuCookies.use_scroll.to_s
     }
   end

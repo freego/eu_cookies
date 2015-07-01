@@ -1,16 +1,9 @@
 @import "eu_cookies/variables";
 
-.eu-cookies[data-position="bottom"] {
-  bottom: 0;
-}
-
-.eu-cookies[data-position="top"] {
-  top: 0;
-}
-
 .eu-cookies {
   position: fixed;
   left: 0;
+  #{$cookies-bar-position}: 0;
   line-height: $cookies-bar-line-height;
   background: $cookies-bar-background-color;
   border-top: 1px solid $cookies-bar-border-color;
@@ -28,9 +21,9 @@
     padding-right: 20px;
 
     .eu-cookies-ok {
-      background-color: $cookies-bar-button-color;
-      background-image: -webkit-linear-gradient(top, $cookies-bar-button-color, $cookies-bar-button-color2);
-      border: 1px solid $cookies-bar-button-border-color;
+      background-color: $cookies-bar-btn-color;
+      background-image: -webkit-linear-gradient(top, $cookies-bar-btn-color, $cookies-bar-btn-color2);
+      border: 1px solid $cookies-bar-btn-border-color;
       border-radius: 2px;
       color: #fff;
       cursor: default;
