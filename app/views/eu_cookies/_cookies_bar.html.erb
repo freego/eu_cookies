@@ -7,7 +7,7 @@
       <%= t('eu_cookies.ok') %>
     </button>
 
-    <%= link_to t('eu_cookies.learn_more'), cookies_policy_path,
-                class: 'eu-cookies-link', target: "_blank" if display_policy? %>
+    <%= link_to t('eu_cookies.learn_more'), cookies_policy_link,
+                class: 'eu-cookies-link', target: "_blank" if display_cookies_policy? %>
   </span>
 <% end %>

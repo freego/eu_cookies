@@ -16,7 +16,11 @@ module EuCookiesHelper
     }
   end
 
-  def display_policy?
+  def display_cookies_policy?
     EuCookies.display_policy
+  end
+
+  def cookies_policy_link
+    EuCookies.display_policy == true ? cookies_policy_path : EuCookies.display_policy
   end
 end

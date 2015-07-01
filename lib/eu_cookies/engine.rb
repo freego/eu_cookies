@@ -1,6 +1,7 @@
 module EuCookies
   class Engine < ::Rails::Engine
     initializer 'eu_cookies.config' do |app|
+      # defaults
       EuCookies.enabled = true if EuCookies.enabled.nil?
       EuCookies.position ||= :bottom
       EuCookies.use_scroll ||= false

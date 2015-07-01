@@ -39,7 +39,7 @@ On a initializer you can configure things (defaults are shown here):
 ```ruby
 EuCookies.position = :bottom # or :top
 EuCookies.use_scroll = false # true to treat page scroll as acceptance
-EuCookies.display_policy = true # false to not link long policy page
+EuCookies.display_policy = true # false to remove link, a string to link an external policy 
 EuCookies.enabled = true # false to disable all the features
 ```
 

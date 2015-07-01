@@ -48,6 +48,15 @@ describe "Cookies Bar", type: :feature, js: true do
     visit homepages_path
     expect(page).to_not have_text I18n.t('eu_cookies.learn_more')
   end
+
+  it "allow to link an external page" do
+    EuCookies.display_policy = "http://www.google.com/policies/privacy/"
+    visit homepages_path
+    new_window = window_opened_by { click_link I18n.t('eu_cookies.learn_more') }
+    within_window new_window do
+      expect(page).to have_text "Google Privacy Policy"
+    end
+  end
 end
 
 def expect_cookie_bar

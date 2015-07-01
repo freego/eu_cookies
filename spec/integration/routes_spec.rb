@@ -17,5 +17,9 @@ describe "Routes", type: :routing do
     EuCookies.enabled = true
     EuCookies.display_policy = false
     expect(get: "cookies-policy").not_to be_routable
+
+    EuCookies.enabled = true
+    EuCookies.display_policy = "http://www.google.com/policies/privacy/"
+    expect(get: "cookies-policy").not_to be_routable
   end
 end
