@@ -60,9 +60,9 @@ describe "Cookies Bar", type: :feature, js: true do
 end
 
 def expect_cookie_bar
-  expect(page).to have_text I18n.t('eu_cookies.cookies_text')
+  expect(page).to have_text I18n.t('eu_cookies.short_html')
 end
 
 def dont_expect_cookie_bar
-  expect(page).to_not have_text I18n.t('eu_cookies.cookies_text')
+  expect(page).to_not have_text I18n.t('eu_cookies.short_html')
 end
