@@ -50,7 +50,7 @@ take a look to your `app/assets/stylesheets/eu_cookies.scss` file.
 ## Supported languages
 
 The short cookies bar message is available in English, German, Spanish, French,
-Croatian, Italian, Slovenian, Dutch, Estonian, Norwegian, Russian and Swedish.
+Croatian, Italian, Slovenian, Dutch, Estonian, Norwegian, Polish, Russian and Swedish.
 
 ## Turbolinks
 
