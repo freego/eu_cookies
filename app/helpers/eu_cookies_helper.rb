@@ -20,6 +20,10 @@ module EuCookiesHelper
   end
 
   def cookies_policy_link
-    EuCookies.display_policy == true ? cookies_policy_path : EuCookies.display_policy
+    if EuCookies.display_policy == true
+      main_app.cookies_policy_path
+    else
+      EuCookies.display_policy
+    end
   end
 end
