@@ -2,8 +2,7 @@
 
 A Rails solution to the European Cookie Law issue.
 
-This will add a dismissable "cookies bar" and a `/cookies-policy` page with the
-long cookies policy text.
+This will add a dismissable "cookies bar" and an optional link to a policy page.
 
 [![Build Status](https://travis-ci.org/freego/eu_cookies.svg)](https://travis-ci.org/freego/eu_cookies)
 [![Code Climate](https://codeclimate.com/github/freego/eu_cookies/badges/gpa.svg)](https://codeclimate.com/github/freego/eu_cookies)
@@ -13,7 +12,7 @@ long cookies policy text.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'eu_cookies', "~> 1.0"
+gem 'eu_cookies', "~> 1.1.0"
 ```
 
 And then execute:
@@ -34,12 +33,15 @@ NOTE: This gem imply that you have JQuery.
 
 ## Configuration
 
-On a initializer you can configure things (defaults are shown here):
+On a initializer you can configure some things (defaults are shown here):
 
 ```ruby
-EuCookies.use_scroll = false # true to treat page scroll as acceptance
-EuCookies.display_policy = true # false to remove link, a string to link an external policy
-EuCookies.enabled = true # false to disable all the features
+# false to remove the default internal link, a string to link an external page
+EuCookies.display_policy = true
+# true to treat page scroll as acceptance
+EuCookies.use_scroll = false
+# false to disable all the features
+EuCookies.enabled = true
 ```
 
 ## Styling
@@ -49,8 +51,10 @@ take a look to your `app/assets/stylesheets/eu_cookies.scss` file.
 
 ## Supported languages
 
-The short cookies bar message is available in English, Croatian, Dutch, Estonian,
+The cookies bar message is available in English, Croatian, Dutch, Estonian,
 French, German, Italian, Norwegian, Polish, Russian, Slovenian, Spanish and Swedish.
+
+The full policy page is currently in english.
 
 ## Turbolinks
 

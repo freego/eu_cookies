@@ -13,7 +13,7 @@ describe "Cookies Bar", type: :feature, js: true do
   end
 
   it "remove cookie bar on click" do
-    click_button I18n.t('eu_cookies.ok')
+    click_link I18n.t('eu_cookies.ok')
     dont_expect_cookie_bar
   end
 
@@ -25,7 +25,7 @@ describe "Cookies Bar", type: :feature, js: true do
   end
 
   it "does not show cookie bar if accepted" do
-    click_button I18n.t('eu_cookies.ok')
+    click_link I18n.t('eu_cookies.ok')
     visit homepages_path
     dont_expect_cookie_bar
   end

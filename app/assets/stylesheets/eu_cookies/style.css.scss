@@ -4,34 +4,39 @@
   position: fixed;
   left: 0;
   #{$cookies-bar-position}: 0;
+  color: $cookies-bar-text-color;
   line-height: $cookies-bar-line-height;
   background: $cookies-bar-background-color;
-  border-top: 1px solid $cookies-bar-border-color;
+  border-top: 1px solid darken($cookies-bar-background-color, 10%);
+  border-bottom: 1px solid darken($cookies-bar-background-color, 10%);
   width: 100%;
   z-index: 999;
   text-align: center;
 
   .eu-cookies-content-holder {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 10px;
     line-height: 26px;
+
+    .eu-cookies-link {
+      color: $cookies-bar-link-color;
+    }
   }
+
   .eu-cookies-button-holder {
     display: inline-block;
     padding-right: 20px;
 
     .eu-cookies-ok {
       background-color: $cookies-bar-btn-color;
-      background-image: -webkit-linear-gradient(top, $cookies-bar-btn-color, $cookies-bar-btn-color2);
-      border: 1px solid $cookies-bar-btn-border-color;
+      border: 1px solid $cookies-bar-btn-color;
       border-radius: 2px;
-      color: #fff;
-      cursor: default;
+      color: $cookies-bar-btn-text-color;
       display: inline-block;
       font-size: 11px;
       font-weight: bold;
       height: 24px;
-      line-height: 20px;
+      line-height: 21px;
       margin-right: 0px;
       min-width: 26px;
       outline: 0;
