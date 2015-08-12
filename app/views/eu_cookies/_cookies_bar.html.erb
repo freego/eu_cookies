@@ -1,13 +1,16 @@
 <%= content_tag :div, class: "eu-cookies", data: cookies_bar_data do %>
   <span class="eu-cookies-content-holder">
     <%= t('eu_cookies.short_html') %>
+
+    <% if display_cookies_policy? %>
+      <%= link_to t('eu_cookies.learn_more'), cookies_policy_link,
+                  class: 'eu-cookies-link', target: "_blank" %>
+    <% end %>
   </span>
+
   <span class="eu-cookies-button-holder">
     <button class="eu-cookies-ok">
       <%= t('eu_cookies.ok') %>
     </button>
-
-    <%= link_to t('eu_cookies.learn_more'), cookies_policy_link,
-                class: 'eu-cookies-link', target: "_blank" if display_cookies_policy? %>
   </span>
 <% end %>
