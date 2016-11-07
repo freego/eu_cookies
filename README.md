@@ -1,5 +1,7 @@
 # EuCookies
 
+[![Gem Version](https://badge.fury.io/rb/eu_cookies.svg)](https://badge.fury.io/rb/eu_cookies)
+
 A Rails solution to the European Cookie Law issue.
 
 This will add a dismissable "cookies bar" and an optional link to a policy page.
@@ -12,7 +14,7 @@ This will add a dismissable "cookies bar" and an optional link to a policy page.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'eu_cookies', "~> 1.1.0"
+gem 'eu_cookies', '~> 1.1.0'
 ```
 
 And then execute:
