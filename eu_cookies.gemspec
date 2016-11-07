@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "railties", ">= 3.1"
   spec.add_runtime_dependency "sass-rails"
-  spec.add_runtime_dependency "js_cookie_rails", "~> 1.0"
+  spec.add_runtime_dependency "js_cookie_rails", "~> 2.0"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake", "~> 10"
