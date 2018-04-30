@@ -54,7 +54,7 @@ take a look to your `app/assets/stylesheets/eu_cookies.scss` file.
 ## Supported languages
 
 The cookies bar message is available in English, Croatian, Dutch, Estonian,
-French, German, Italian, Norwegian, Polish, Russian, Slovenian, Spanish and Swedish.
+French, German, Italian, Norwegian, Polish, Portuguese, Russian, Slovenian, Spanish and Swedish.
 
 The full policy page is currently in english.
 
